@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="coverBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C4A2E"/>
+      <stop offset="60%" style="stop-color:#1E3620"/>
+      <stop offset="100%" style="stop-color:#162A18"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5A3"/>
+      <stop offset="50%" style="stop-color:#C4973B"/>
+      <stop offset="100%" style="stop-color:#8B6914"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5A3"/>
+      <stop offset="100%" style="stop-color:#C4973B"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1A2E1C"/>
+      <stop offset="100%" style="stop-color:#2C4A2E"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="8" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#C4973B" flood-opacity="0.15" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Leaf pattern -->
+    <pattern id="leafPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+      <path d="M40 10 Q50 25 40 40 Q30 25 40 10Z" fill="none" stroke="rgba(196,151,59,0.04)" stroke-width="0.5"/>
+      <path d="M10 50 Q20 65 10 80 Q0 65 10 50Z" fill="none" stroke="rgba(196,151,59,0.04)" stroke-width="0.5"/>
+      <path d="M70 50 Q80 65 70 80 Q60 65 70 50Z" fill="none" stroke="rgba(196,151,59,0.04)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Book spine shadow -->
+  <rect x="8" y="8" width="384" height="584" rx="4" fill="#000" opacity="0.2" filter="url(#shadow)"/>
+
+  <!-- Book spine -->
+  <rect x="0" y="0" width="20" height="600" rx="3" fill="url(#spine)"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="rgba(196,151,59,0.2)" stroke-width="0.5"/>
+
+  <!-- Main cover -->
+  <rect x="20" y="0" width="380" height="600" fill="url(#coverBg)"/>
+
+  <!-- Leaf texture overlay -->
+  <rect x="20" y="0" width="380" height="600" fill="url(#leafPattern)"/>
+
+  <!-- Subtle radial glow -->
+  <ellipse cx="210" cy="260" rx="180" ry="200" fill="rgba(196,151,59,0.03)"/>
+
+  <!-- Top gold border -->
+  <rect x="50" y="40" width="320" height="2" fill="url(#goldShine)" opacity="0.6"/>
+
+  <!-- Corner ornaments -->
+  <path d="M55 45 L55 65 M55 45 L75 45" fill="none" stroke="url(#goldShine)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M365 45 L365 65 M365 45 L345 45" fill="none" stroke="url(#goldShine)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- "A Study Devotional" label -->
+  <text x="210" y="90" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#E8D5A3" letter-spacing="4" opacity="0.7">A STUDY DEVOTIONAL</text>
+
+  <!-- Main title "BEHOLD!" -->
+  <text x="210" y="175" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="bold" font-style="italic" fill="url(#goldText)" filter="url(#innerGlow)">BEHOLD!</text>
+
+  <!-- Decorative line under BEHOLD -->
+  <line x1="120" y1="195" x2="300" y2="195" stroke="url(#goldShine)" stroke-width="1"/>
+  <circle cx="210" cy="195" r="3" fill="url(#goldShine)"/>
+  <line x1="170" y1="205" x2="250" y2="205" stroke="url(#goldShine)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="210" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" fill="#E8D5A3" opacity="0.9">Captivated by the</text>
+  <text x="210" y="275" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#E8D5A3">God of Creation</text>
+
+  <!-- Leaf/nature illustration -->
+  <g transform="translate(210, 370)" opacity="0.25">
+    <!-- Central leaf -->
+    <path d="M0 -60 Q25 -30 0 0 Q-25 -30 0 -60Z" fill="none" stroke="#C4973B" stroke-width="1"/>
+    <line x1="0" y1="-60" x2="0" y2="0" stroke="#C4973B" stroke-width="0.5"/>
+    <!-- Left leaf -->
+    <path d="M-20 -20 Q-40 -45 -15 -55 Q-5 -30 -20 -20Z" fill="none" stroke="#C4973B" stroke-width="0.8"/>
+    <!-- Right leaf -->
+    <path d="M20 -20 Q40 -45 15 -55 Q5 -30 20 -20Z" fill="none" stroke="#C4973B" stroke-width="0.8"/>
+    <!-- Small buds -->
+    <circle cx="-30" cy="-10" r="2" fill="#C4973B" opacity="0.4"/>
+    <circle cx="30" cy="-10" r="2" fill="#C4973B" opacity="0.4"/>
+    <circle cx="0" cy="5" r="2.5" fill="#C4973B" opacity="0.3"/>
+  </g>
+
+  <!-- Description text -->
+  <text x="210" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#E8D5A3" opacity="0.6" letter-spacing="1">BEHOLDING AND UNVEILING THE PRESENCE OF GOD</text>
+  <text x="210" y="448" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#E8D5A3" opacity="0.6" letter-spacing="1">WOVEN THROUGH EVERY DETAIL OF CREATION</text>
+  <text x="210" y="466" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#E8D5A3" opacity="0.6" letter-spacing="1">AS REVEALED BY THE SCIENCES</text>
+
+  <!-- Bottom divider -->
+  <line x1="120" y1="495" x2="300" y2="495" stroke="url(#goldShine)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Author name -->
+  <text x="210" y="530" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="url(#goldText)" letter-spacing="3">CHRISTINE BELTZ</text>
+
+  <!-- Publisher -->
+  <text x="210" y="565" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="9" fill="#E8D5A3" opacity="0.4" letter-spacing="2">MIRAMARE PONTE PRESS</text>
+
+  <!-- Bottom gold border -->
+  <rect x="50" y="580" width="320" height="2" fill="url(#goldShine)" opacity="0.6"/>
+
+  <!-- Bottom corner ornaments -->
+  <path d="M55 575 L55 555 M55 575 L75 575" fill="none" stroke="url(#goldShine)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M365 575 L365 555 M365 575 L345 575" fill="none" stroke="url(#goldShine)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Subtle page edge effect on right -->
+  <rect x="396" y="3" width="4" height="594" rx="1" fill="#F0E8D8" opacity="0.3"/>
+</svg>
