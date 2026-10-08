@@ -1015,3 +1015,14 @@ form.is-sent .form-fields{display:none}
   .split .w__i{transform:none!important}
   .flow__track,.wl{animation:none!important}
 }
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .hero-books { display: none; }
+  .hero__grid { grid-template-columns: 1fr; }
+  .editions__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .why__cols { grid-template-columns: 1fr; }
+  .author-teaser__grid { grid-template-columns: 1fr; }
+  .aside-quote { display: none; }
+  .section-head p br { display: none; }
+}
