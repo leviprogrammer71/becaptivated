@@ -40,12 +40,12 @@
       <img class="brand__sun" src="images/art/sun.svg" alt="" width="50" height="50">
       <span><span class="brand__name">Be Captivated</span><span class="brand__tag">Captivated by the God of Creation</span></span>
     </a>
-    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="webinars.html">Webinars</a></nav>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="webinars.html">Webinars</a><a href="celebration.html">Celebration</a></nav>
     <button class="btn btn--sm header-cta" type="button" data-open="preorder">Preorder the book</button>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-panel" id="mobile-panel">
-    <nav aria-label="Mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="webinars.html">Webinars</a><a href="book.html">The Book</a><a href="studies.html">Studies</a><a href="blog.html">Blog</a><a href="contact.html">Connect</a></nav>
+    <nav aria-label="Mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="webinars.html">Webinars</a><a href="celebration.html">Celebration</a><a href="book.html">The Book</a><a href="studies.html">Studies</a><a href="blog.html">Blog</a><a href="contact.html">Connect</a></nav>
     <button class="btn btn--block" type="button" data-open="preorder">Preorder the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="arrow"><path pathLength="1" d="M5 12h14M13 6l6 6-6 6"/></svg></button>
   </div>
 </header>
@@ -229,28 +229,66 @@
     <button class="modal__close" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M6 6l12 12M18 6L6 18"/></svg></button>
     <img class="deco po__art-l" src="images/art/botanical-sprig.svg" alt="" data-depth="10">
     <img class="deco po__art-r" src="images/art/botanical-branch.svg" alt="" data-depth="14">
-    <img class="deco po__mtn" src="images/art/sketch-mountains.webp" alt="" data-depth="-8">
-    <form class="po" id="preorder-form" action="#" data-preorder>
+    <form class="po" id="preorder-form" novalidate>
       <div class="modal-brand"><img src="images/art/sun.svg" alt=""><span><span class="brand__name">Be Captivated</span><span class="brand__tag">Captivated by the God of Creation</span></span></div>
-      <p class="eyebrow">One wonder. Three ways to explore.</p>
-      <h2 id="po-title">Bring Be Captivated home.</h2>
-      <p class="po__sub">Choose your edition and be part of the journey.</p>
-      <fieldset class="po__editions" style="border:0;padding:0;margin-inline:auto">
-        <legend class="sr-only">Choose an edition</legend>
-        <label class="po-ed po-ed--main"><input type="radio" name="edition" value="devotional" data-url="#" checked><div class="book  " data-depth="12"><div class="book__body"><span class="book__back"></span><span class="book__pages"></span><div class="book__cover"><img src="images/covers/cover-devotional.webp" alt="Be Captivated by the God of Creation — study devotional cover" loading="lazy" decoding="async"></div></div></div><strong>Devotional</strong><small>Adults</small><span class="script">Go deeper.</span></label>
-        <label class="po-ed"><input type="radio" name="edition" value="student" data-url="#"><div class="book book--sq " data-depth="9"><div class="book__body"><span class="book__back"></span><span class="book__pages"></span><div class="book__cover"><img src="images/covers/cover-devotional.webp" alt="Be Captivated by the God of Creation — cover" loading="lazy" decoding="async"></div></div></div><strong>Student Edition</strong><small>Ages 11–14</small><span class="script">Explore it.</span></label>
-      </fieldset>
-      <button class="btn po__cta" type="submit">Preorder now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="arrow"><path pathLength="1" d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-      <p class="po__perks"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M2.5 6.5h11v9h-11z"/><path pathLength="1" d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg> Be part of the release</span><span>Resources for the whole family</span><span>A deeper look at the Creator</span></p>
-      <div class="po__foot">
-        <div class="flow " aria-hidden="true" style="--ratio:9.0667;--fh:64px;top:4px;opacity:.55;--fs:70s;z-index:0"><div class="flow__track" style="background-image:url(images/flow/flow-golden-ribbons.webp)"></div></div>
-        <div class="wave" aria-hidden="true"><svg class="wl" viewBox="-39 0 778 150" preserveAspectRatio="none" focusable="false" data-wdy="0.100" data-wdx="-0.0120" style="--sa:1.10%;--sw:13.0s;--sd:0.0s"><path fill="url(#tx-purple)" d="M-39 4C-32.5 4.3 -29.8 3.7 0 6C29.8 8.3 93.3 14 140 18C186.7 22 233.3 22.3 280 30C326.7 37.7 396.7 58.3 420 64L420 66C396.7 63.7 326.7 56.3 280 52C233.3 47.7 186.7 42 140 40C93.3 38 29.8 40 0 40C-29.8 40 -32.5 40 -39 40Z"/></svg><svg class="wl wl--rev" viewBox="-39 0 778 150" preserveAspectRatio="none" focusable="false" data-wdy="0.130" data-wdx="0.0160" style="--sa:1.28%;--sw:16.5s;--sd:13.8s"><path fill="url(#tx-green)" d="M-39 52.3C-32.5 52.2 -36.5 52.4 0 52C36.5 51.6 123.3 53.7 180 50C236.7 46.3 283.3 34 340 30C396.7 26 460 30 520 26C580 22 663.5 9.8 700 6C736.5 2.2 732.5 3.8 739 3.4L739 45C732.5 45.1 736.5 44.5 700 46C663.5 47.5 580 52.3 520 54C460 55.7 396.7 54.7 340 56C283.3 57.3 236.7 59 180 62C123.3 65 36.5 71.7 0 74C-36.5 76.3 -32.5 75.3 -39 75.6Z"/></svg><svg class="wl" viewBox="-39 0 778 150" preserveAspectRatio="none" focusable="false" data-wdy="0.170" data-wdx="-0.0200" style="--sa:1.46%;--sw:20.0s;--sd:14.6s"><path fill="url(#tx-red)" filter="url(#f-cut)" d="M-2 152L-2 150L300 150C320 141.7 380 113.3 420 100C460 86.7 493.3 76.7 540 70C586.7 63.3 666.8 61.9 700 60C733.2 58.1 732.5 58.8 739 58.5L741 58.5L741 152Z"/><path d="M300 150C320 141.7 380 113.3 420 100C460 86.7 493.3 76.7 540 70C586.7 63.3 666.8 61.9 700 60C733.2 58.1 732.5 58.8 739 58.5" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg><svg class="wl wl--rev" viewBox="-39 0 778 150" preserveAspectRatio="none" focusable="false" data-wdy="0.035" data-wdx="0.0000" style="--sa:0.50%;--sw:22.0s;--sd:13.9s"><path fill="url(#tx-blue)" filter="url(#f-cut)" d="M-2 152L-2 150L420 150C436.7 143.3 488.3 126.3 520 110C551.7 93.7 580 66.3 610 52C640 37.7 678.5 29.9 700 24C721.5 18.1 732.5 17.9 739 16.7L741 16.7L741 152Z"/><path d="M420 150C436.7 143.3 488.3 126.3 520 110C551.7 93.7 580 66.3 610 52C640 37.7 678.5 29.9 700 24C721.5 18.1 732.5 17.9 739 16.7" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg></div>
-        <blockquote>“The heavens declare the glory of God;<br>the skies proclaim the work of his hands.”<cite>Psalm 19:1</cite></blockquote>
-        <p class="script">Different depths.<br>The same wonder.</p>
+      <p class="eyebrow">Be the first to get your copy.</p>
+      <h2 id="po-title">Preorder Be Captivated</h2>
+      <p class="po__sub">Fill out the form below and we'll reach out when your copy is ready.</p>
+      <div style="max-width:380px;margin:0 auto;text-align:left">
+        <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px">Full Name</label>
+        <input type="text" name="fullName" placeholder="Your full name" required style="width:100%;padding:10px 12px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--cream);font-size:15px;margin-bottom:14px">
+        <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px">Email</label>
+        <input type="email" name="email" placeholder="you@example.com" required style="width:100%;padding:10px 12px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--cream);font-size:15px;margin-bottom:14px">
+        <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px">Phone</label>
+        <input type="tel" name="phone" placeholder="(559) 000-0000" style="width:100%;padding:10px 12px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--cream);font-size:15px;margin-bottom:14px">
+        <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px">Preferred Format</label>
+        <select name="preferredFormat" style="width:100%;padding:10px 12px;border:1px solid var(--paper-line);border-radius:var(--radius);background:var(--cream);font-size:15px;margin-bottom:14px;appearance:none">
+          <option value="" disabled selected>Choose a format…</option>
+          <option value="Spiral (Vervante)">Spiral Bound (Vervante)</option>
+          <option value="Paperback (KDP)">Paperback (KDP)</option>
+          <option value="Hardcover (KDP)">Hardcover (KDP)</option>
+          <option value="Undecided">Not sure yet</option>
+        </select>
       </div>
+      <button class="btn po__cta" type="submit">Submit preorder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="arrow"><path pathLength="1" d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="po__perks"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M2.5 6.5h11v9h-11z"/><path pathLength="1" d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg> Be part of the release</span><span>Spiral, Paperback &amp; Hardcover</span><span>We'll contact you when it's ready</span></p>
     </form>
+    <div class="po__success" id="preorder-success" style="display:none;text-align:center;padding:40px 20px">
+      <img src="images/art/sun.svg" alt="" width="56" height="56" style="margin:0 auto 16px">
+      <h3 style="font-family:var(--serif);font-size:28px;margin-bottom:8px;color:var(--gold-deep)">You're on the list!</h3>
+      <p style="color:var(--muted)">Thank you for your preorder interest. We'll reach out when your copy is ready.</p>
+      <button class="btn btn--sm" type="button" data-close style="margin-top:18px">Close</button>
+    </div>
   </div>
 </dialog>
+<script>
+/* ---- Preorder popup → Google Sheets ---- */
+(function () {
+  var SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+  var form = document.getElementById('preorder-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('.po__cta');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    var data = new FormData(form);
+    var payload = {};
+    data.forEach(function (v, k) { payload[k] = v; });
+    payload.source = 'preorder-popup';
+    payload.timestamp = new Date().toISOString();
+    fetch(SCRIPT_URL, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function () {
+      form.style.display = 'none';
+      document.getElementById('preorder-success').style.display = 'block';
+    }).catch(function () {
+      btn.disabled = false; btn.textContent = 'Try again';
+    });
+  });
+})();
+</script>
 <dialog class="modal modal--split" id="modal-webinar" aria-labelledby="ws-title">
   <div class="modal__card">
     <button class="modal__close" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M6 6l12 12M18 6L6 18"/></svg></button>

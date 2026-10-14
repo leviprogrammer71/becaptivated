@@ -32,3 +32,17 @@ logs/
 # Build directories
 dist/
 build/
+# Full-resolution author photo shoot (325MB, unreferenced by the site)
+author/
+
+# Reference / mood-board material and old site backup — not part of the deploy
+website/inspo/
+website/_previous-site/
+website/Claude outputs/
+
+# Unreferenced raw video (32MB)
+website/vid1.mp4
+website/vid2.mp4
+
+# macOS alias stub, not a real PDF
+book.pdf
