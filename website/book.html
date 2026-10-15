@@ -264,7 +264,7 @@
 <script>
 /* ---- Preorder popup → Google Sheets ---- */
 (function () {
-  var SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQMkxnN2Xp3hRuksZmbVrkfQ1TqtqYg7UNHtifEcQo-S1lsIfEdxJSAVPUGX6OVVJi/exec';
   var form = document.getElementById('preorder-form');
   if (!form) return;
   form.addEventListener('submit', function (e) {
@@ -278,7 +278,7 @@
     payload.timestamp = new Date().toISOString();
     fetch(SCRIPT_URL, {
       method: 'POST', mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify(payload)
     }).then(function () {
       form.style.display = 'none';
