@@ -1026,3 +1026,30 @@ form.is-sent .form-fields{display:none}
   .aside-quote { display: none; }
   .section-head p br { display: none; }
 }
+
+/* ==========================================================================
+   Mobile refinements
+   Two measured problems, fixed only at phone widths so desktop is unchanged:
+   1. Text-entry controls under 16px make iOS Safari zoom the page on focus,
+      which leaves the form scrolled sideways and half off screen.
+   2. Tap targets under ~44px are below the comfortable minimum, worst in the
+      footer where links sat at 31px and the social icons at 34px.
+   The preorder modal's controls carry inline font sizes from their markup,
+   so those need !important to beat the style attribute.
+   ========================================================================== */
+@media (max-width:600px){
+  /* 1. No zoom-on-focus */
+  .field input,.field select,.field textarea,
+  .inline-form input[type=email]{font-size:16px}
+  .po input[type=text],.po input[type=email],.po input[type=tel],
+  .po select,.po textarea{font-size:16px!important}
+
+  /* 2. Comfortable tap targets */
+  .socials a{width:44px;height:44px}
+  .footer-nav a,.footer-nav button{min-height:44px;display:inline-flex;align-items:center}
+  .footer-col a{display:inline-flex;align-items:center;min-height:40px}
+  .footer-bottom a{min-height:40px;display:inline-flex;align-items:center}
+
+  /* The footer nav wraps once targets grow, so let it breathe */
+  .footer-nav{flex-wrap:wrap;gap:4px 18px}
+}

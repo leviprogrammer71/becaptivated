@@ -51,6 +51,15 @@
 .rsvp-radio-group .rsvp-radios label:has(input:checked){border-color:var(--gold);background:rgba(243,196,63,.08)}
 .rsvp-radio-group .rsvp-radios input[type="radio"]{width:16px;height:16px;accent-color:var(--gold)}
 .rsvp-submit{width:100%;margin-top:8px}
+/* Mobile: 16px keeps iOS Safari from zooming the page on input focus,
+   and the radio pills grow to a comfortable tap target. */
+@media(max-width:600px){
+  .rsvp-card input[type="text"],
+  .rsvp-card input[type="email"],
+  .rsvp-card input[type="tel"],
+  .rsvp-card select{font-size:16px}
+  .rsvp-radio-group .rsvp-radios label{padding:11px 16px;font-size:15px}
+
 }
 .rsvp-success{display:none;text-align:center;padding:40px 20px}
 .rsvp-success.show{display:block}
